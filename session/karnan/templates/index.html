@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Karnan Portfolio</h1>
+    <ul>
+        {% for  a in userdata %}
+        <li><a href="portfolio/{{a.id}}">{{ a.username }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
